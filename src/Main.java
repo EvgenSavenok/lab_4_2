@@ -25,7 +25,11 @@ public class Main {
     }
 
     public static int findNOD(int firstNumber, int secondNumber) {
-        return secondNumber == 0 ? Math.abs(firstNumber) : findNOD(secondNumber, firstNumber % secondNumber);
+        if (secondNumber == 0) {
+            return Math.abs(firstNumber);
+        } else {
+            return findNOD(secondNumber, firstNumber % secondNumber);
+        }
     }
 
     public static String inputFilePath() {
