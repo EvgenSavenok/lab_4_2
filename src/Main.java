@@ -31,7 +31,6 @@ public class Main {
             return findNOD(secondNumber, firstNumber % secondNumber);
         }
     }
-
     public static String inputFilePath() {
         String path;
         boolean isIncorrect;
